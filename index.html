@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasbir Kabir — AI Consultant, Web Developer &amp; Media Buyer</title>
+  <meta name="description" content="Tasbir Kabir is an AI Consultant, Web Developer, and Media Buyer helping businesses scale through AI agents, automation systems, and high-performing websites.">
+  <link rel="canonical" href="https://tasbirkabir.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tasbirkabir.com/">
+  <meta property="og:title" content="Tasbir Kabir — AI Consultant, Web Developer &amp; Media Buyer">
+  <meta property="og:description" content="I build AI agents, automation systems, and high-performing websites that help businesses save time, generate leads, and scale.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tasbirkabir.com/">
+  <meta property="twitter:title" content="Tasbir Kabir — AI Consultant, Web Developer &amp; Media Buyer">
+  <meta property="twitter:description" content="I build AI agents, automation systems, and high-performing websites that help businesses save time, generate leads, and scale.">
+  
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Tasbir Kabir",
+    "jobTitle": "AI Consultant, Web Developer & Media Buyer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "BD"
+    },
+    "url": "https://tasbirkabir.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/tasbirrkabir",
+      "https://github.com/tasbirkabir",
+      "https://x.com/tasbirrkabir",
+      "https://www.facebook.com/share/1Tf65s6PB7/"
+    ],
+    "description": "I build AI agents, automation systems, and high-performing websites that help businesses scale.",
+    "knowsAbout": ["AI Agent Development", "n8n Workflow Automation", "Web Development", "Media Buying", "Digital Strategy"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo">TASBIR!</div>
+    <div class="loader-bar"><i id="loadFill"></i></div>
+    <div class="loader-status" id="loadStatus">CLIMBING THE TOWER…</div>
+  </div>
+
+  <!-- GRAPHICS & INTERACTION LAYERS -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="cursor-label" id="cursorLabel"></div>
+  <canvas id="gl"></canvas>
+  <canvas id="webTrail"></canvas>
+  <div class="halftone"></div>
+  <div class="halftone-red"></div>
+  <div class="progress"><i id="progFill"></i></div>
+
+  <!-- HUD INTERFACE -->
+  <div class="hud hud-tl">SYS // <b>TASBIRKABIR</b><br>NODE: DHAKA-BD</div>
+  <div class="hud hud-br">WEB FIRED <b id="hudWeb">000%</b><br>SCROLL <b id="hudScroll">000%</b></div>
+
+  <!-- NAVIGATION HEADER -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <a class="nav-logo hoverable" href="#top" aria-label="Tasbir Kabir Home">TASBIR<span> KABIR</span></a>
+    <div class="nav-links">
+      <a class="hoverable" href="#about">About</a>
+      <a class="hoverable" href="#work">What I Build</a>
+      <a class="hoverable" href="#testimonials">Testimonials</a>
+      <a class="hoverable" href="#process">Process</a>
+      <a class="hoverable" href="#pricing">Pricing</a>
+      <a class="hoverable" href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta hoverable" href="https://www.linkedin.com/in/tasbirrkabir" target="_blank" rel="noopener" aria-label="LinkedIn profile of Tasbir Kabir">@tasbirrkabir ↗</a>
+  </nav>
+
+  <!-- MAIN WRAPPER -->
+  <main id="top">
+    <div class="skew-wrap">
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-tag" id="scrambleTag">// AI CONSULTANT · WEB DEVELOPER · MEDIA BUYER — BANGLADESH</div>
+        <div class="h1-3d" id="h13d">
+          <h1>
+            <span class="row"><span class="t3d-ink">I BUILD</span></span>
+            <span class="row"><span class="t3d-red">THE FUTURE.</span></span>
+            <span class="row"><span class="t3d-blue">DIGITAL SYSTEMS.</span></span>
+          </h1>
+        </div>
+        <p class="hero-sub">Hey, I'm <b>Tasbir</b> — AI Consultant, Web Developer, and Media Buyer. I build <b>AI agents, automation systems, and high-performing websites</b> that help businesses save time, generate leads, and scale faster. From intelligent workflows to conversion-focused web experiences, I combine <b>AI and digital strategy</b> to create systems that drive real business growth.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary hoverable magnetic" data-label="LET'S GO!" href="#contact"><span class="dot"></span> Work With Me</a>
+          <a class="btn btn-ghost hoverable magnetic" data-label="DIVE IN!" href="#about">Explore ↓</a>
+        </div>
+        <div class="hero-meta">
+          <div>EST. 3+ YRS — WEB × AI</div>
+          <div class="scroll-hint"><div class="wheel"></div>SCROLL TO FIRE THE WEB</div>
+          <div>BUILD · AUTOMATE · SCALE</div>
+        </div>
+      </section>
+
+      <!-- DOUBLE MARQUEE -->
+      <div class="marquee m-fwd">
+        <div class="marquee-track">
+          <span>AI Agents</span><span class="hl">★</span><span>Automation</span><span class="hl">★</span><span>Web Development</span><span class="hl">★</span><span>AI Consulting</span><span class="hl">★</span><span>Media Buying</span><span class="hl">★</span>
+          <span>AI Agents</span><span class="hl">★</span><span>Automation</span><span class="hl">★</span><span>Web Development</span><span class="hl">★</span><span>AI Consulting</span><span class="hl">★</span><span>Media Buying</span><span class="hl">★</span>
+        </div>
+      </div>
+      <div class="marquee m-rev m2">
+        <div class="marquee-track">
+          <span>Build</span><span>·</span><span>Automate</span><span>·</span><span>Scale</span><span>·</span><span>Optimize</span><span>·</span><span>Repeat</span><span>·</span><span>Build</span><span>·</span><span>Automate</span><span>·</span><span>Scale</span><span>·</span><span>Optimize</span><span>·</span><span>Repeat</span><span>·</span>
+          <span>Build</span><span>·</span><span>Automate</span><span>·</span><span>Scale</span><span>·</span><span>Optimize</span><span>·</span><span>Repeat</span><span>·</span><span>Build</span><span>·</span><span>Automate</span><span>·</span><span>Scale</span><span>·</span><span>Optimize</span><span>·</span><span>Repeat</span><span>·</span>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="eyebrow reveal">01 — Who is Tasbir</div>
+        <h2 class="h2 flip3d">BUILDING DIGITAL SYSTEMS <span class="accent">THAT SCALE</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="reveal">For over 3 years, I've been helping businesses establish and grow their digital presence through <b>websites, marketing systems, and automation.</b> Along the way, I discovered that many repetitive processes could be <b>streamlined and enhanced using AI.</b></p>
+            <p class="reveal">Today, I build <b>AI agents, automation systems, and AI-integrated websites</b> that help businesses operate more efficiently and grow faster. My focus is simple: create <b>practical solutions</b> that deliver measurable results while remaining easy to manage and scale.</p>
+            <p class="quote reveal">"The best systems work for you even when you're offline."</p>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><div class="num" data-count="100" data-suffix="+">0</div><div class="lbl">Projects Completed</div></div>
+            <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="lbl">Websites Built</div></div>
+            <div class="stat"><div class="num" data-count="15" data-suffix="+">0</div><div class="lbl">Workflows Created</div></div>
+            <div class="stat"><div class="num" data-count="98" data-suffix="%">0</div><div class="lbl">Client Satisfaction</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="work">
+        <div class="eyebrow reveal">02 — What I Build &amp; Teach</div>
+        <h2 class="h2 flip3d">FROM IDEA TO <span class="accent-b">AUTOMATED</span> BUSINESS</h2>
+        <div class="cards">
+          <div class="card hoverable reveal">
+            <div class="badge">ISSUE #01</div>
+            <div class="glyph">🤖</div>
+            <h3>AI Agents</h3>
+            <p>Custom AI agents built to handle customer interactions, lead qualification, support tasks, data processing, and business operations—working around the clock to increase efficiency and reduce manual workload.</p>
+            <div class="chip-row"><span class="chip">OpenAI</span><span class="chip">Claude</span><span class="chip">n8n</span></div>
+          </div>
+          <div class="card hoverable reveal">
+            <div class="badge">ISSUE #02</div>
+            <div class="glyph">⚡</div>
+            <h3>Automation Systems</h3>
+            <p>Smart automation workflows that connect your tools, streamline repetitive processes, automate lead management, and improve operational efficiency across your business.</p>
+            <div class="chip-row"><span class="chip">n8n</span><span class="chip">Make</span><span class="chip">API Integrations</span></div>
+          </div>
+          <div class="card hoverable reveal">
+            <div class="badge">ISSUE #03</div>
+            <div class="glyph">💻</div>
+            <h3>AI Integrated Web Development</h3>
+            <p>Modern websites enhanced with AI-powered features, automation, lead generation systems, and conversion-focused experiences designed to help businesses attract, engage, and convert more customers.</p>
+            <div class="chip-row"><span class="chip">WordPress</span><span class="chip">AI Features</span><span class="chip">Optimization</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section id="testimonials" class="testimonials-sec">
+        <div class="max-w-5xl mx-auto px-6 mb-12">
+          <div class="eyebrow reveal">Testimonials</div>
+          <h2 class="h2 flip3d">WHAT CLIENTS <span class="accent">SAY</span></h2>
+          <p class="hero-sub reveal">Real feedback from clients and businesses I've helped through websites, automation, AI solutions, and digital growth systems.</p>
+        </div>
+
+        <div class="testimonials-marquee-wrap reveal">
+          <!-- Row 1: Forward scrolling -->
+          <div class="testimonials-marquee m-fwd">
+            <div class="testimonials-track">
+              <!-- Card 1 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Tasbir delivered exactly what we needed. The website was fast, professional, and helped us generate more inquiries than before."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 01</h4>
+                    <span>Business Owner</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The automation system saved our team hours every week. Everything now runs much more efficiently."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 02</h4>
+                    <span>Operations Manager</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Working with Tasbir was smooth from start to finish. Communication was excellent and delivery exceeded expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 03</h4>
+                    <span>Startup Founder</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Our new website looks modern, loads fast, and performs significantly better than our previous version."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 04</h4>
+                    <span>Company Director</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The AI integration helped automate repetitive tasks and improved our workflow immediately."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 05</h4>
+                    <span>Agency Owner</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- DUPLICATES FOR SEAMLESS WRAPPING -->
+              <!-- Card 1 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Tasbir delivered exactly what we needed. The website was fast, professional, and helped us generate more inquiries than before."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 01</h4>
+                    <span>Business Owner</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The automation system saved our team hours every week. Everything now runs much more efficiently."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 02</h4>
+                    <span>Operations Manager</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Working with Tasbir was smooth from start to finish. Communication was excellent and delivery exceeded expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 03</h4>
+                    <span>Startup Founder</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Our new website looks modern, loads fast, and performs significantly better than our previous version."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 04</h4>
+                    <span>Company Director</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The AI integration helped automate repetitive tasks and improved our workflow immediately."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 05</h4>
+                    <span>Agency Owner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: Reverse scrolling -->
+          <div class="testimonials-marquee m-rev">
+            <div class="testimonials-track">
+              <!-- Card 6 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Professional service, attention to detail, and great support throughout the entire project."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 06</h4>
+                    <span>Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"One of the best developers we've worked with. Reliable, knowledgeable, and focused on results."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 07</h4>
+                    <span>Entrepreneur</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 8 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The project was delivered on time and the final result exceeded our expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 08</h4>
+                    <span>Business Consultant</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 9 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"From website development to automation, everything was handled professionally and efficiently."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 09</h4>
+                    <span>Small Business Owner</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Working with Tasbir was smooth from start to finish. Communication was excellent and delivery exceeded expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 03</h4>
+                    <span>Startup Founder</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- DUPLICATES FOR SEAMLESS WRAPPING -->
+              <!-- Card 6 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Professional service, attention to detail, and great support throughout the entire project."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 06</h4>
+                    <span>Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"One of the best developers we've worked with. Reliable, knowledgeable, and focused on results."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 07</h4>
+                    <span>Entrepreneur</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 8 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"The project was delivered on time and the final result exceeded our expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 08</h4>
+                    <span>Business Consultant</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 9 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"From website development to automation, everything was handled professionally and efficiently."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 09</h4>
+                    <span>Small Business Owner</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="testi-card hoverable">
+                <p class="testi-text">"Working with Tasbir was smooth from start to finish. Communication was excellent and delivery exceeded expectations."</p>
+                <div class="testi-divider"></div>
+                <div class="testi-user">
+                  <div class="testi-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="testi-meta">
+                    <h4>Client 03</h4>
+                    <span>Startup Founder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS SECTION -->
+      <section id="process">
+        <div class="eyebrow reveal">03 — How It Works</div>
+        <h2 class="h2 flip3d">SIMPLE PROCESS, <span class="accent">SERIOUS</span> RESULTS</h2>
+        <div class="steps">
+          <div class="step reveal"><div class="no">01</div><h4>Understand</h4><p>First I map your business or goal — where time is leaking, and where AI fits best.</p></div>
+          <div class="step reveal"><div class="no">02</div><h4>Build</h4><p>Agent or automation designed + built — fast, tested, and plugged into your real workflow.</p></div>
+          <div class="step reveal"><div class="no">03</div><h4>Learn</h4><p>I don't just deliver — I teach you how to run and modify the system yourself, step by step.</p></div>
+          <div class="step reveal"><div class="no">04</div><h4>Scale</h4><p>Once the system runs, we scale it across more brands, more products, more income streams.</p></div>
+        </div>
+      </section>
+
+      <!-- PRICING SECTION -->
+      <section id="pricing" class="pricing-sec">
+        <div class="max-w-5xl mx-auto px-6 mb-12">
+          <div class="eyebrow reveal">04 — Services &amp; Pricing</div>
+          <h2 class="h2 flip3d">CHOOSE THE <span class="accent-b">RIGHT</span> SOLUTION</h2>
+          <p class="hero-sub reveal">Whether you need a website, AI automation, or a complete digital system, choose the solution that best fits your business goals.</p>
+        </div>
+
+        <div class="pricing-cards reveal">
+          <!-- Card 1: Starter -->
+          <div class="pricing-card hoverable">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <p>Perfect for individuals, startups, and small businesses looking to establish a professional online presence.</p>
+            </div>
+            <div class="pricing-value">
+              <span class="price-type">Custom Price</span>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Business Website</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Mobile Responsive Design</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Basic SEO Setup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Contact Form Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Fast Performance</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost hoverable magnetic" data-label="LET'S GO!">Get Started</a>
+          </div>
+
+          <!-- Card 2: Growth (Popular) -->
+          <div class="pricing-card popular hoverable">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Growth</h3>
+              <p>For businesses ready to automate operations and generate more leads.</p>
+            </div>
+            <div class="pricing-value">
+              <span class="price-type">Custom Price</span>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Starter</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> AI Agent Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Automation Workflows</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Lead Generation System</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Analytics Setup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Priority Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary hoverable magnetic" data-label="BEST CHOICE!"><span class="dot"></span> Most Popular</a>
+          </div>
+
+          <!-- Card 3: Scale -->
+          <div class="pricing-card hoverable">
+            <div class="pricing-header">
+              <h3>Scale</h3>
+              <p>Complete digital systems built for growing businesses and agencies.</p>
+            </div>
+            <div class="pricing-value">
+              <span class="price-type">Custom Price</span>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Growth</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Custom AI Solutions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Advanced Automations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> CRM Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Custom Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dedicated Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary hoverable magnetic" data-label="DISCUSS!"><span class="dot"></span> Book Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="eyebrow reveal">05 — Let's Build</div>
+        <h2 class="h2 flip3d">READY TO <span class="accent">BUILD SMARTER?</span></h2>
+        
+        <!-- CONNECT COMPONENT INTEGRATION -->
+        <div class="connect-card-wrap reveal">
+          <div class="connect-card-glow"></div>
+          <div class="connect-card">
+            <canvas id="connect-particles"></canvas>
+            <div class="connect-grid">
+              <!-- Left side: Interactive pointer canvas board -->
+              <div class="connect-board">
+                <svg class="center-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <div id="badge-ai" class="board-badge">AI Agents</div>
+                <div id="badge-web" class="board-badge">Web Dev</div>
+                <div id="badge-auto" class="board-badge">Automation</div>
+                <div id="badge-consult" class="board-badge">Consulting</div>
+                
+                <div id="board-pointer">
+                  <svg width="17" height="18" viewBox="0 0 12 13" fill="#E0202F" stroke="white" stroke-width="1"><path d="M12 5.50676L0 0L2.83818 13L6.30623 7.86537L12 5.50676V5.50676Z"/></svg>
+                  <span>Tasbir</span>
+                </div>
+              </div>
+              
+              <!-- Right side: Copy writing and CTAs -->
+              <div class="connect-content">
+                <h3>Any questions about Systems?</h3>
+                <p>Feel free to reach out to me!</p>
+                <div class="connect-actions">
+                  <a class="btn btn-primary hoverable magnetic" data-label="BOOK NOW!" href="https://www.linkedin.com/in/tasbirrkabir" target="_blank" rel="noopener" aria-label="Schedule a call with Tasbir Kabir on LinkedIn">Book a call</a>
+                  <a class="btn btn-icon hoverable magnetic" data-label="EMAIL ME!" href="mailto:tasbirrkabir@gmail.com" target="_blank" rel="noopener" aria-label="Send an email to Tasbir Kabir">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </a>
+                  <a class="btn btn-icon hoverable magnetic" data-label="WHATSAPP!" href="https://wa.me/8801640101399" target="_blank" rel="noopener" aria-label="Connect with Tasbir Kabir on WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2a9.97 9.97 0 0 0-8.575 15.147l-1.393 5.093 5.214-1.368A9.97 9.97 0 1 0 12.012 2zm5.72 14.28c-.244.686-1.21 1.258-1.748 1.341-.476.073-1.096.096-1.77-.123-.39-.126-.9-.304-1.57-.59a11.1 11.1 0 0 1-4.708-4.13c-.496-.667-.88-1.478-.88-2.31 0-1.597.83-2.428 1.13-2.731.3-.303.666-.379.88-.379.215 0 .43.007.618.016.197.009.462-.073.722.553.268.647.915 2.235.996 2.399.08.164.135.356.026.574-.109.218-.163.355-.326.545-.164.19-.344.425-.49.57-.164.164-.336.342-.144.672.19.33.844 1.393 1.81 2.257 1.246 1.114 2.298 1.459 2.622 1.624.325.164.516.136.708-.083.19-.218.823-.957 1.045-1.285.22-.328.44-.273.74-.164.3.11 1.902.898 2.228 1.062.325.164.542.246.623.383.08.136.08.793-.163 1.48z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-row reveal">
+          <a class="social fb hoverable" href="https://www.facebook.com/share/1Tf65s6PB7/" target="_blank" rel="noopener" aria-label="Tasbir Kabir's Facebook page">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            Facebook
+          </a>
+          <a class="social ln hoverable" href="https://www.linkedin.com/in/tasbirrkabir" target="_blank" rel="noopener" aria-label="Tasbir Kabir's LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+          <a class="social tw hoverable" href="https://x.com/tasbirrkabir" target="_blank" rel="noopener" aria-label="Tasbir Kabir's X profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X (Twitter)
+          </a>
+          <a class="social gh hoverable" href="https://github.com/tasbirkabir" target="_blank" rel="noopener" aria-label="Tasbir Kabir's GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>© 2026 TASBIR KABIR — AI CONSULTANT &amp; WEB DEVELOPER</div>
+    <div>BANGLADESH · BUILT WITH AI ⚡</div>
+  </footer>
+
+  <!-- EXTERNAL DEPENDENCIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
