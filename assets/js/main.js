@@ -336,7 +336,16 @@ function setHud(val) {
 /* ---------- RENDER LOOP ---------- */
 const clock = new THREE.Clock();
 let webProgress = 0, webTarget = 0;
-const camBase = { x: 0, y: 5, z: 14 };
+// Calculate responsive camera base positions to prevent overlapping layout text on small viewports
+function getResponsiveCamBase() {
+  if (window.innerWidth < 480) {
+    return { x: -1.4, y: 5.6, z: 20 }; // Mobile: shift left and move back to clear central text
+  } else if (window.innerWidth < 768) {
+    return { x: -0.9, y: 5.3, z: 17 };  // Tablet: shift slightly left and move back
+  } else {
+    return { x: 0, y: 5, z: 14 };      // Desktop: default framing
+  }
+}
 const mouse = { x: 0, y: 0 };
 const shots = [];
 
@@ -386,6 +395,7 @@ function tick() {
   });
 
   // camera framing & following web tip
+  const camBase = getResponsiveCamBase();
   const followX = THREE.MathUtils.lerp(camBase.x, tp.x * .55, webProgress);
   const followY = THREE.MathUtils.lerp(camBase.y, 2.5 + tp.y * .35, webProgress);
   const followZ = THREE.MathUtils.lerp(camBase.z, 15.5, webProgress);

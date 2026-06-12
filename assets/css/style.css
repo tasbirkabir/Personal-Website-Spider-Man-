@@ -27,8 +27,12 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html {
   background: var(--paper);
+}
+
+body {
+  background: transparent;
   color: var(--ink);
   overflow-x: hidden;
 }
@@ -56,7 +60,7 @@ a {
 .halftone {
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
   opacity: .4;
   background-image: radial-gradient(rgba(21, 21, 28, .09) 1px, transparent 1.4px);
@@ -69,7 +73,7 @@ a {
   right: -15vw;
   width: 55vw;
   height: 55vw;
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
   opacity: .14;
   border-radius: 50%;
@@ -131,7 +135,7 @@ a {
 #webTrail {
   position: fixed;
   inset: 0;
-  z-index: 9998;
+  z-index: 7400;
   pointer-events: none;
 }
 
@@ -202,7 +206,7 @@ a {
 #gl {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -2;
   pointer-events: none;
 }
 
@@ -1067,7 +1071,7 @@ footer {
 /* ---------- cursor click burst ---------- */
 .burst {
   position: fixed;
-  z-index: 9500;
+  z-index: 7200;
   pointer-events: none;
   transform: translate(-50%, -50%);
   font-family: 'Bangers', cursive;
@@ -1092,7 +1096,7 @@ footer {
 
 .websplat {
   position: fixed;
-  z-index: 9400;
+  z-index: 7300;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
