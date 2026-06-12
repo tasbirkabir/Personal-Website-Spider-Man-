@@ -1729,137 +1729,97 @@ footer {
   line-height: 1.65;
 }
 
-/* Custom Subscription Input & Button Wrapper */
-.newsletter-sec .input-wrapper {
-  width: 100%;
-  max-width: 420px;
-  height: 54px;
-  border-radius: 14px;
+/* From Uiverse.io by vinodjangid07 */ 
+.input-wrapper {
+  width: fit-content;
+  height: 45px;
+  border-radius: 20px;
   padding: 5px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   align-items: center;
-  background-color: var(--paper);
-  border: 3px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--ink);
-  transition: transform 0.25s, box-shadow 0.25s;
-  flex-shrink: 0;
+  background-color: #292524;
 }
 
-.newsletter-sec .input-wrapper:focus-within {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--ink);
-}
-
-.newsletter-sec .icon {
-  width: 22px;
-  height: 22px;
-  fill: var(--ink);
-  margin-left: 10px;
+.icon {
+  width: 30px;
+  fill: rgb(255, 255, 255);
+  margin-left: 8px;
   transition: all 0.3s;
-  flex-shrink: 0;
 }
-
-.newsletter-sec .input-wrapper:active .icon {
-  transform: scale(1.2);
-}
-
-.newsletter-sec .input {
-  flex: 1;
+.input {
+  max-width: 170px;
   height: 100%;
   border: none;
   outline: none;
-  padding-left: 12px;
-  padding-right: 12px;
-  background-color: transparent;
-  color: var(--ink);
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  width: 100%;
+  padding-left: 15px;
+  background-color: #292524;
+  color: white;
+  font-size: 1em;
 }
-
-.newsletter-sec .input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px var(--paper) inset;
-  -webkit-text-fill-color: var(--ink);
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
 }
-
-.newsletter-sec .Subscribe-btn {
+.Subscribe-btn {
   height: 100%;
-  width: 120px;
+  width: 95px;
   border: none;
-  border-radius: 9px;
-  color: #ffffff;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  background-color: var(--red);
-  font-family: 'Bangers', cursive;
-  font-size: 18px;
-  letter-spacing: 0.06em;
+  background-color: #ffffff;
+  font-weight: 500;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 0.3s;
-  flex-shrink: 0;
 }
-
-.newsletter-sec .Subscribe-btn .btn-text {
-  display: inline-block;
-  transition: opacity 0.25s, transform 0.25s;
-}
-
-.newsletter-sec .arrow {
+.arrow {
+  /* display: none; */
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(-100%);
-  transition: transform 0.3s;
-  pointer-events: none;
+  margin-right: 150px;
+  transition: all 0.3s;
 }
-
-.newsletter-sec .arrow-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.input-wrapper:active .icon {
+  transform: scale(1.3);
 }
-
-.newsletter-sec .Subscribe-btn:hover {
-  background-color: var(--yellow);
-  color: var(--ink);
+.Subscribe-btn:hover {
+  color: white;
 }
-
-.newsletter-sec .Subscribe-btn:hover .btn-text {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.newsletter-sec .Subscribe-btn:hover .arrow {
-  transform: translateX(0);
-}
-
-.newsletter-sec .Subscribe-btn:hover .arrow-icon {
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
   animation: jello-vertical 0.9s both;
-  transform-origin: center;
-}
-
-.newsletter-sec .Subscribe-btn:active {
-  transform: scale(0.95);
+  transform-origin: right;
 }
 
 @keyframes jello-vertical {
-  0% { transform: scale3d(1, 1, 1); }
-  30% { transform: scale3d(0.75, 1.25, 1); }
-  40% { transform: scale3d(1.25, 0.75, 1); }
-  50% { transform: scale3d(0.85, 1.15, 1); }
-  65% { transform: scale3d(1.05, 0.95, 1); }
-  75% { transform: scale3d(0.95, 1.05, 1); }
-  100% { transform: scale3d(1, 1, 1); }
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
 }
 
 /* Responsive Newsletter Styles */
@@ -1873,7 +1833,7 @@ footer {
   .newsletter-info p {
     max-width: 100%;
   }
-  .newsletter-sec .input-wrapper {
+  .input-wrapper {
     max-width: 100%;
   }
 }
