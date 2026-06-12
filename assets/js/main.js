@@ -717,8 +717,59 @@ if (pointerEl) {
            .to('#badge-auto', { opacity: 0.4, duration: 0.2 }, '-=1.1')
            .to('#badge-ai', { opacity: 1, duration: 0.3 }, '-=0.3')
            // return to start
-           .to(pointerEl, { left: 140, top: 100, duration: 1.1, ease: 'power2.inOut', delay: 1.2 })
-           .to('#badge-ai', { opacity: 0.4, duration: 0.2 }, '-=1.1');
+            .to(pointerEl, { left: 140, top: 100, duration: 1.1, ease: 'power2.inOut', delay: 1.2 })
+            .to('#badge-ai', { opacity: 0.4, duration: 0.2 }, '-=1.1');
 }
 
-
+// Newsletter Subscription Form Handler
+const newsletterForm = document.getElementById('newsletter-form');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = newsletterForm.querySelector('.input');
+    const button = newsletterForm.querySelector('.Subscribe-btn');
+    const btnText = newsletterForm.querySelector('.btn-text');
+    
+    if (input && button && input.value) {
+      const email = input.value;
+      
+      // Disable inputs during success state
+      input.disabled = true;
+      button.disabled = true;
+      
+      // Animate card container bounce
+      const container = document.querySelector('.newsletter-container');
+      if (container) {
+        gsap.to(container, {
+          y: -12,
+          scale: 1.015,
+          duration: 0.2,
+          yoyo: true,
+          repeat: 1,
+          ease: 'power2.out'
+        });
+      }
+      
+      // Update button text to Success
+      if (btnText) {
+        btnText.textContent = "SUCCESS!";
+        gsap.fromTo(btnText, { scale: 0 }, { scale: 1, duration: 0.35, ease: 'back.out(2)' });
+      }
+      
+      // Change input to success message
+      input.value = "Awesome! You're subscribed. ⚡";
+      input.style.color = 'var(--red)';
+      
+      // Center a comic burst exactly on the subscribe button
+      const rect = button.getBoundingClientRect();
+      const x = rect.left + window.scrollX + rect.width / 2;
+      const y = rect.top + window.scrollY + rect.height / 2;
+      
+      if (typeof comicBurst === 'function') {
+        comicBurst(x, y);
+      }
+      
+      console.log(`Subscribed email: ${email}`);
+    }
+  });
+}
